@@ -13,10 +13,10 @@ namespace Chullacafe.Views
 
         private void OnViewOrderSummaryClicked(object sender, EventArgs e)
         {
-            // Leer cantidades de las entradas
             int americanoQty = string.IsNullOrWhiteSpace(AmericanoEntry.Text) ? 0 : int.Parse(AmericanoEntry.Text);
             int mocaccinoQty = string.IsNullOrWhiteSpace(MocaccinoEntry.Text) ? 0 : int.Parse(MocaccinoEntry.Text);
             int capuccinoQty = string.IsNullOrWhiteSpace(CapuccinoEntry.Text) ? 0 : int.Parse(CapuccinoEntry.Text);
+           
 
             // Crear pedidos basados en las cantidades
             if (americanoQty > 0)
@@ -49,6 +49,7 @@ namespace Chullacafe.Views
                 });
             }
 
+           
             // Navegar a la página de resumen de pedidos
             Shell.Current.GoToAsync("OrderPage");
         }

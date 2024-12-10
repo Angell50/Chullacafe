@@ -10,7 +10,6 @@ namespace Chullacafe.Views
         {
             InitializeComponent();
 
-            // Enlazar el servicio con los datos de pedidos
             BindingContext = OrderService.Instance;
         }
     }
