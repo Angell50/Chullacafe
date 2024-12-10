@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Chullacafe.Views.WelcomePage">
+
+    <VerticalStackLayout Padding="30" VerticalOptions="Center">
+        <Label Text="¡Bienvenido a Chullacafe!"
+               FontSize="30"
+               HorizontalOptions="Center" />
+
+        <Image Source="logo.png" 
+           HorizontalOptions="Center" 
+           VerticalOptions="CenterAndExpand" 
+           WidthRequest="225" 
+           HeightRequest="225" 
+           Margin="20"/>
+        
+        <Label Text="Explora nuestro menú y disfruta de tus productos favoritos"
+               FontSize="18"
+               HorizontalOptions="Center" />
+
+        <Button Text="Comenzar"
+                FontSize="20"
+                Clicked="OnStartButtonClicked" 
+                HorizontalOptions="Center" 
+                Margin="20" />
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="Chullacafe.Views.MenuPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30">
+            <Label Text="Menú de Productos"
+                   FontSize="24"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+
+            <!-- Productos -->
+            <Label Text="Americano"
+                   FontSize="18"
+                   Margin="10"/>
+            <Entry x:Name="AmericanoEntry"
+                   Keyboard="Numeric"
+                   Placeholder="Cantidad" />
+
+            <Label Text="Mocaccino"
+                   FontSize="18"
+                   Margin="10"/>
+            <Entry x:Name="MocaccinoEntry"
+                   Keyboard="Numeric"
+                   Placeholder="Cantidad" />
+
+            <Label Text="Capuccino"
+                   FontSize="18"
+                   Margin="10"/>
+            <Entry x:Name="CapuccinoEntry"
+                   Keyboard="Numeric"
+                   Placeholder="Cantidad" />
+
+            <Button Text="Ver Resumen de Pedido"
+                    Margin="20"
+                    Clicked="OnViewOrderSummaryClicked" 
+            ></Button>
+                    
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
